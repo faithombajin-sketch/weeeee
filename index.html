@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="hearts"></div>
+
+    <div class="birthday-card">
+
+        <h1>Happy Birthday MAMA! 🎂</h1>
+
+        <p class="message">
+            Wishing you a wonderful birthday filled with
+            happiness, love, and beautiful memories.
+        </p>
+        <p id="secret">
+            💗 You deserve all the happiness in the world! 💗
+        </p>
+        
+        <div class="gallery" id="gallery">
+
+            <div class="photo" onclick="enlargePicture(this)">
+                <img src="photo1.jpg">
+            </div>
+
+            <div class="photo active" onclick="enlargePicture(this)">
+                <img src="photo2.jpg">
+            </div>
+
+            <div class="photo" onclick="enlargePicture(this)">
+                <img src="photo3.jpg">
+            </div>
+
+            <div class="photo" onclick="enlargePicture(this)">
+                <img src="photo4.jpg">
+            </div>
+
+            <p id="pictureMessage">
+                Pindutin mo yung mga picture ma para lumaki!!!
+            </p>
+
+        </div>
+
+        <audio id="birthdaySong">
+            <source src="birthday-song.mp3" type="audio/mpeg">
+        </audio>
+
+        <button onclick="showPictures()">
+            Click Me 💗
+        </button>
+
+
+        
+
+        
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

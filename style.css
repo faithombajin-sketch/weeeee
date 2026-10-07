@@ -120,3 +120,327 @@ button:hover {
     font-size: 18px;
     color: #ff9dce;
 }
+#thirdScreen {
+    display: none;
+}
+
+.envelope {
+    position: relative;
+    width: 420px;
+    height: 280px;
+    margin: 50px auto 20px;
+    background: #f7d6df;
+    border-radius: 10px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.35);
+    overflow: hidden;
+}
+
+.envelope-body {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 75%;
+    background: #f8dce4;
+    clip-path: polygon(0 0, 50% 55%, 100% 0, 100% 100%, 0 100%);
+    z-index: 3;
+}
+
+.envelope-flap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 55%;
+    background: #f4c5d2;
+    clip-path: polygon(0 0, 50% 100%, 100% 0);
+    z-index: 4;
+}
+
+.letter {
+    position: absolute;
+    width: 270px;
+    height: 190px;
+    background: white;
+    top: 25px;
+    left: 75px;
+    border-radius: 8px;
+    padding-top: 35px;
+    color: #ff4f9a;
+    font-size: 35px;
+    z-index: 2;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+}
+
+.letter span {
+    font-size: 25px;
+    color: #b83b70;
+}
+
+.seal {
+    position: absolute;
+    left: 50%;
+    bottom: 70px;
+    transform: translateX(-50%);
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    background: #e94f87;
+    color: white;
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+    box-shadow: 0 5px 12px rgba(0,0,0,0.25);
+}
+#fourthScreen {
+    display: none;
+    text-align: center;
+}
+
+#countdown {
+    font-size: 60px;
+    font-weight: bold;
+    color: #ff8dcc;
+    margin-bottom: 20px;
+}
+
+.cake {
+    position: relative;
+    width: 400px;
+    height: 330px;
+    margin: 0 auto;
+}
+
+/* BOTTOM LAYER */
+.cake-bottom {
+    position: absolute;
+    bottom: 20px;
+    left: 35px;
+    width: 330px;
+    height: 110px;
+    background: linear-gradient(#ff8fba, #ed5f91);
+    border-radius: 15px 15px 25px 25px;
+    box-shadow: 0 12px 25px rgba(0,0,0,0.35);
+}
+
+/* MIDDLE LAYER */
+.cake-middle {
+    position: absolute;
+    bottom: 110px;
+    left: 55px;
+    width: 290px;
+    height: 90px;
+    background: #ffd1df;
+    border-radius: 18px 18px 10px 10px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+}
+
+/* TOP */
+.cake-top {
+    position: absolute;
+    bottom: 175px;
+    left: 75px;
+    width: 250px;
+    height: 80px;
+    background: #fff0f6;
+    border-radius: 50%;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+    z-index: 2;
+    padding-top: 25px;
+}
+
+.cake-top span {
+    color: #ff4f9a;
+    font-size: 22px;
+    margin: 0 8px;
+}
+
+/* STRAWBERRIES */
+.icing {
+    text-align: center;
+    font-size: 22px;
+    padding-top: 30px;
+}
+
+/* HEART DECORATION */
+.cake-decoration {
+    text-align: center;
+    padding-top: 45px;
+    color: white;
+    font-size: 20px;
+    letter-spacing: 5px;
+}
+
+/* CANDLES */
+.candle {
+    position: absolute;
+    bottom: 235px;
+    width: 25px;
+    height: 70px;
+    background: repeating-linear-gradient(
+        45deg,
+        #ff4f9a,
+        #ff4f9a 7px,
+        #ffd1df 7px,
+        #ffd1df 14px
+    );
+    border-radius: 5px;
+    z-index: 6;
+}
+
+/* 3 CANDLE POSITIONS */
+.candle1 {
+    left: 115px;
+}
+
+.candle2 {
+    left: 188px;
+}
+
+.candle3 {
+    left: 261px;
+}
+
+/* FLAME */
+.flame {
+    position: absolute;
+    top: -45px;
+    left: -7px;
+    font-size: 38px;
+    animation: flicker 0.5s infinite alternate;
+}
+
+@keyframes flicker {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.15);
+    }
+}
+
+/* PAG NAMATAY NA ANG CANDLE */
+.flame.off {
+    display: none;
+}
+
+#cakeLetter {
+    display: none;
+    margin-top: 20px;
+}
+
+.letter-paper {
+    width: 320px;
+    min-height: 180px;
+    margin: 0 auto;
+    padding: 30px;
+    background: white;
+    color: #d94f87;
+    border-radius: 10px;
+    font-size: 35px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+.letter-paper {
+    width: 400px;
+    min-height: 180px;
+    margin: 0 auto;
+    padding: 30px;
+    background: rgb(59, 11, 137);
+    color: #d94f87;
+    border-radius: 10px;
+    font-size: 35px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+.letter-paper p {
+    margin-top: 20px;
+    font-size: 20px;
+    line-height: 1.6;
+    font-weight: bold;
+}
+button {
+    position: relative;
+    z-index: 100;
+}
+
+#thirdScreen {
+    display: none;
+    position: relative;
+    z-index: 10;
+}
+
+#fourthScreen {
+    display: none;
+    position: relative;
+    z-index: 10;
+}
+
+#cakeLetter {
+    display: none;
+}
+
+button {
+    position: relative;
+    z-index: 9999;
+    pointer-events: auto;
+}
+.cake-crack {
+    animation: cakeCrack 1.5s forwards;
+}
+
+@keyframes cakeCrack {
+    0% {
+        transform: scale(1);
+    }
+
+    25% {
+        transform: scale(1.05) rotate(-2deg);
+    }
+
+    50% {
+        transform: scale(1.05) rotate(2deg);
+    }
+
+    70% {
+        transform: scale(1.02) rotate(-2deg);
+    }
+
+    100% {
+        transform: scale(0.95);
+        opacity: 0;
+    }
+}
+#heartConfetti {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.heart-confetti {
+    position: absolute;
+    top: -30px;
+    font-size: 20px;
+    animation: heartFall 5s linear forwards;
+}
+
+@keyframes heartFall {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(110vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+.letter-paper {
+    position: relative;
+    z-index: 5;
+}
